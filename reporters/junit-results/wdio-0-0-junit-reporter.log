@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites/>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite tests="1" failures="1" errors="0" skipped="0">
+    <testcase classname="" name="">
+      <failure message="WebDriverError: The application at 'C:\Users\Pinoplast\Desktop\wdio-appium-bs\apps\android\app-staging-debug.apk' does not exist or is not accessible when running &quot;http://127.0.0.1:4723/session&quot; with method &quot;POST&quot;"/>
+    </testcase>
+  </testsuite>
+</testsuites>
