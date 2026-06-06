@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "@wdio/spec-reporter": "^9.20.0",
-    "axios": "^1.13.2",
+    "axios": "^1.17.0",
     "dotenv": "^17.2.3"
   }
 }
