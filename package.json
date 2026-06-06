@@ -19,7 +19,7 @@
     "appium-xcuitest-driver": "^10.4.3",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.0",
-    "wdio-wait-for": "^3.0.6"
+    "wdio-wait-for": "^3.1.1"
   },
   "scripts": {
     "postinstall": "npx appium driver install uiautomator2 && npx appium driver install xcuitest || echo 'Drivers installation completed'",
