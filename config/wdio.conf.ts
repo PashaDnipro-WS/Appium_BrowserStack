@@ -25,7 +25,7 @@ export const config = {
             transpileOnly: true
         }
     },
-    
+
     //
     // =================
     // Service Providers
@@ -39,7 +39,7 @@ export const config = {
     // in via the `region` property. Available short handles for regions are `us` (default), `eu` and `apac`.
     // These regions are used for the Sauce Labs VM cloud and the Sauce Labs Real Device Cloud.
     // If you don't provide the region it will default for the `us`
-    
+
     //
     // ==================
     // Specify Test Files
@@ -155,16 +155,18 @@ export const config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: [
-    "spec", // https://webdriver.io/docs/spec-reporter.html
-    [
-      "junit",
-      {
-        outputDir: "./reporters/junit-results", // https://webdriver.io/docs/junit-reporter.html
-      },
-    ],
-        ['allure', {outputDir: './reporters/allure-results',
+        "spec", // https://webdriver.io/docs/spec-reporter.html
+        [
+            "junit",
+            {
+                outputDir: "./reporters/junit-results", // https://webdriver.io/docs/junit-reporter.html
+            },
+        ],
+        ['allure', {
+            outputDir: './reporters/allure-results',
             disableWebdriverStepsReporting: false,
-            disableWebdriverScreenshotsReporting: false,}]
+            disableWebdriverScreenshotsReporting: false,
+        }]
 
 
         // ['allure', {
@@ -175,7 +177,7 @@ export const config = {
         // }],
     ],
 
-    
+
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -227,11 +229,10 @@ export const config = {
      * @param {Array.<String>} specs List of spec file paths that are to be run
      * @param {string} cid worker id (e.g. 0-0)
      */
-    beforeSession: async function (config, capabilities, specs, cid) {
+    beforeSession: async function (_config: any, capabilities: any, _specs: any, cid: string) {
         console.log('Starting new session for worker:', cid);
         console.log('Session capabilities:', JSON.stringify(capabilities, null, 2));
-        
-        // Add a small delay to avoid session conflicts
+
         await new Promise(resolve => setTimeout(resolve, 2000));
     },
     /**
@@ -284,28 +285,38 @@ export const config = {
      * @param {boolean} result.passed    true if test has passed, otherwise false
      * @param {object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
-    afterTest: async function(test, context, { error, result, duration, passed, retries }) {
+    afterTest: async function (test: any, _context: any, { error, duration, passed, retries }: any) {
         if (!passed) {
             console.log(`Test failed: ${test.title}`);
             console.log(`Error: ${error ? error.message : 'Unknown error'}`);
             console.log(`Duration: ${duration}ms`);
             console.log(`Retries: ${retries.attempts}/${retries.limit}`);
-            
+
             try {
-                // Take screenshot on failure
-                const screenshotPath = path.join(screenshotDir, `${test.title.replace(/\s+/g, '_')}_${Date.now()}.png`);
-                await browser.saveScreenshot(screenshotPath);
-                allureReporter.addAttachment('Failure Screenshot', fs.readFileSync(screenshotPath), 'image/png');
-                
-                // Get page source for debugging
-                const pageSource = await browser.getPageSource();
-                const pageSourcePath = path.join(screenshotDir, `${test.title.replace(/\s+/g, '_')}_${Date.now()}_source.xml`);
+                const screenshotPath = path.join(
+                    screenshotDir,
+                    `${test.title.replace(/\s+/g, '_')}_${Date.now()}.png`
+                );
+
+                await (browser as any).saveScreenshot(screenshotPath);
+                allureReporter.addAttachment(
+                    'Failure Screenshot',
+                    fs.readFileSync(screenshotPath),
+                    'image/png'
+                );
+
+                const pageSource = await (browser as any).getPageSource();
+                const pageSourcePath = path.join(
+                    screenshotDir,
+                    `${test.title.replace(/\s+/g, '_')}_${Date.now()}_source.xml`
+                );
+
                 fs.writeFileSync(pageSourcePath, pageSource);
                 allureReporter.addAttachment('Page Source', pageSource, 'text/xml');
-                
+
                 console.log(`Screenshot saved: ${screenshotPath}`);
                 console.log(`Page source saved: ${pageSourcePath}`);
-            } catch (debugError) {
+            } catch (debugError: any) {
                 console.log('Failed to capture debug information:', debugError.message);
             }
         }
@@ -342,12 +353,11 @@ export const config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that ran
      */
-    afterSession: async function (config, capabilities, specs) {
+    afterSession: async function (_config: any, _capabilities: any, _specs: any) {
         console.log('Session terminated, cleaning up...');
-        
-        // Add cleanup delay to ensure proper session termination
+
         await new Promise(resolve => setTimeout(resolve, 3000));
-        
+
         console.log('Session cleanup completed');
     },
     /**
