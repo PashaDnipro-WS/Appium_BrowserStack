@@ -9,6 +9,40 @@ import fs from 'fs'
 
 export default class Page {
 
+
+public async clickElementByIndex(element: string, index: number, retries: number = 3): Promise<void> {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      await this.waitUntilElementByIndexDisplayed(element, index);
+      const elem = await this.getElementByIndex(element, index);
+      await elem.click();
+      return;
+    } catch (error) {
+      if (attempt === retries) {
+        throw new Error(`Failed to click element ${element}[${index}] after ${retries} attempts: ${(error as Error).message}`);
+      }
+      await browser.pause(1000);
+    }
+  }
+}
+
+public async clickElement(element: string, retries: number = 3): Promise<void> {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      await this.waitUntilElementDisplayed(element);
+      const elem = await this.getElement(element);
+      await elem.click();
+      return;
+    } catch (error) {
+      if (attempt === retries) {
+        throw new Error(`Failed to click element ${element}: ${(error as Error).message}`);
+      }
+      await browser.pause(1000);
+    }
+  }
+}
+
+  
     async open(path: string) {
       await browser.url(path);
     }
@@ -143,75 +177,6 @@ export default class Page {
       await elem.setValue(value);
     }
   
-    public async clickElement(element: string, retries: number = 3): Promise<void> {
-      for (let attempt = 1; attempt <= retries; attempt++) {
-        try {
-          await this.waitUntilElementDisplayed(element);
-          const elem = await this.getElement(element);
-          
-          // Wait for element to be clickable
-          await browser.waitUntil(async () => {
-            try {
-              return await elem.isClickable();
-            } catch (error) {
-              return false;
-            }
-          }, {
-            timeout: 10000,
-            timeoutMsg: `Element ${element} not clickable within 10s`,
-            interval: 500
-          });
-          
-          await elem.click();
-          console.log(`Successfully clicked element ${element} on attempt ${attempt}`);
-          return; // Success
-        } catch (error) {
-          console.log(`Click attempt ${attempt}/${retries} failed for ${element}:`, (error as Error).message);
-          
-          if (attempt === retries) {
-            throw new Error(`Failed to click element ${element} after ${retries} attempts: ${(error as Error).message}`);
-          }
-          
-          // Wait before retry
-          await browser.pause(1000);
-        }
-      }
-    }
-  
-    public async clickElementByIndex(element: string, index: number, retries: number = 3): Promise<void> {
-      for (let attempt = 1; attempt <= retries; attempt++) {
-        try {
-          await this.waitUntilElementByIndexDisplayed(element, index);
-          const elem = await this.getElementByIndex(element, index);
-          
-          // Wait for element to be clickable
-          await browser.waitUntil(async () => {
-            try {
-              return await elem.isClickable();
-            } catch (error) {
-              return false;
-            }
-          }, {
-            timeout: 10000,
-            timeoutMsg: `Element ${element}[${index}] not clickable within 10s`,
-            interval: 500
-          });
-          
-          await elem.click();
-          console.log(`Successfully clicked element ${element}[${index}] on attempt ${attempt}`);
-          return; // Success
-        } catch (error) {
-          console.log(`Click attempt ${attempt}/${retries} failed for ${element}[${index}]:`, (error as Error).message);
-          
-          if (attempt === retries) {
-            throw new Error(`Failed to click element ${element}[${index}] after ${retries} attempts: ${(error as Error).message}`);
-          }
-          
-          // Wait before retry
-          await browser.pause(1000);
-        }
-      }
-    }
   
     public async scrollElementIntoViewByIndex(element: string, index: number): Promise<void> {
       const elem = await this.getElementByIndex(element, index);

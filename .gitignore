@@ -67,3 +67,7 @@ apps
 ChromeDriver.txt
 
 out
+
+#allure-report
+allure-results
+allure-report
