@@ -2,7 +2,10 @@ name: Publish Local Allure Report
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
+
+permissions:
+  contents: write
 
 jobs:
   publish-report:
