@@ -66,9 +66,12 @@ ChromeDriver.txt
 out
 
 # auto generated files from reporters such as Allure or Junit
-reporters/junit-results
+reporters/junit-results/
 //reporters/allure-results
+reporters/junit-results/*.log
 
 #allure-report
 allure-report
 //allure-results
+
+

@@ -1,3 +1,14 @@
+## View Latest Report
+
+[![View Allure Report](https://img.shields.io/badge/View-Allure_Report-blue)](https://pashadnipro-ws.github.io/Appium_BrowserStack/)
+
+1. Tests are executed locally.
+2. Allure results are generated in the reporters/allure-results directory.
+3. Results are committed and pushed to the repository.
+4. GitHub Actions automatically generates the Allure HTML report.
+5. The report is deployed to GitHub Pages and becomes available through the link above.
+
+---
 
 # e2e-tests: WebdriverIO v9, Appium v3, Hybrid App (Android & iOS), BrowserStack
 
