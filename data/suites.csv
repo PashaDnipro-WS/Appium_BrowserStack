@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5959","should add green product to cart and verify selected color","Sauce Labs Demo App","2026-06-07","passed","2026-06-07","","","",""
+"","10623","should remove product from cart","Sauce Labs Demo App","2026-06-07","passed","2026-06-07","","","",""
+"","4339","should open product details","Sauce Labs Demo App","2026-06-07","passed","2026-06-07","","","",""
+"","3838","should submit five star review and show confirmation dialog","Sauce Labs Demo App","2026-06-07","passed","2026-06-07","","","",""
+"","10551","should login with valid credentials and logout successfully","Sauce Labs Demo App","2026-06-07","passed","2026-06-07","","","",""
+"","4937","should add product to cart","Sauce Labs Demo App","2026-06-07","passed","2026-06-07","","","",""
