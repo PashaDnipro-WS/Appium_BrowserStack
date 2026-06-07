@@ -60,14 +60,15 @@ typings/
 # next.js build output
 .next
 
-# auto generated files from reporters such as Allure or Junit
-reporters/*
-
 apps
 ChromeDriver.txt
 
 out
 
+# auto generated files from reporters such as Allure or Junit
+reporters/junit-results
+//reporters/allure-results
+
 #allure-report
-allure-results
 allure-report
+//allure-results

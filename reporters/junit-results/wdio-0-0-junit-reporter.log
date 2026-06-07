@@ -1,335 +1,331 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites tests="6" failures="0" errors="0" skipped="0">
-  <testsuite name="Sauce Labs Demo App" timestamp="2026-06-07T19:53:34" time="40.003" tests="6" failures="0" errors="0" skipped="0">
+  <testsuite name="Sauce Labs Demo App" timestamp="2026-06-07T20:36:33" time="40.248" tests="6" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Sauce Labs Demo App"/>
       <property name="capabilities" value="android.rf8r90007tx"/>
       <property name="file" value="file:///R:/TASKS/5_Appium_Browserstack/Appium_BrowserStack/test/specs/shopping.e2e.ts"/>
     </properties>
-    <testcase classname="android.rf8r90007tx.Sauce_Labs_Demo_App" name="should open product details" time="3.587">
+    <testcase classname="android.rf8r90007tx.Sauce_Labs_Demo_App" name="should open product details" time="4.339">
       <system-out><![CDATA[
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/appium/device/terminate_app - {"appId":"com.saucelabs.mydemoapp.android"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/appium/device/terminate_app - {"appId":"com.saucelabs.mydemoapp.android"}
 RESULT: {"appId":"com.saucelabs.mydemoapp.android"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/appium/device/activate_app - {"appId":"com.saucelabs.mydemoapp.android"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/appium/device/activate_app - {"appId":"com.saucelabs.mydemoapp.android"}
 RESULT: {"appId":"com.saucelabs.mydemoapp.android"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-059d-ffff-ffff0000005c/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05d6-ffff-ffff0000005c/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-059d-ffff-ffff0000005c/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05d6-ffff-ffff0000005c/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-059d-ffff-ffff0000005c/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05d6-ffff-ffff0000005c/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productTV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productTV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productTV"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productTV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productTV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productTV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-059e-ffff-ffff00000178/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05d7-ffff-ffff00000178/displayed - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="android.rf8r90007tx.Sauce_Labs_Demo_App" name="should add product to cart" time="4.961">
+    <testcase classname="android.rf8r90007tx.Sauce_Labs_Demo_App" name="should add product to cart" time="4.937">
       <system-out><![CDATA[
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/appium/device/terminate_app - {"appId":"com.saucelabs.mydemoapp.android"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/appium/device/terminate_app - {"appId":"com.saucelabs.mydemoapp.android"}
 RESULT: {"appId":"com.saucelabs.mydemoapp.android"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/appium/device/activate_app - {"appId":"com.saucelabs.mydemoapp.android"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/appium/device/activate_app - {"appId":"com.saucelabs.mydemoapp.android"}
 RESULT: {"appId":"com.saucelabs.mydemoapp.android"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a1-ffff-ffff0000005c/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05da-ffff-ffff0000005c/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a1-ffff-ffff0000005c/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05da-ffff-ffff0000005c/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a1-ffff-ffff0000005c/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05da-ffff-ffff0000005c/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Tap to add product to cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Tap to add product to cart"}
 RESULT: {"using":"accessibility id","value":"Tap to add product to cart"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Tap to add product to cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Tap to add product to cart"}
 RESULT: {"using":"accessibility id","value":"Tap to add product to cart"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a2-ffff-ffff00000188/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05db-ffff-ffff00000188/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Tap to add product to cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Tap to add product to cart"}
 RESULT: {"using":"accessibility id","value":"Tap to add product to cart"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a2-ffff-ffff00000188/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05db-ffff-ffff00000188/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Tap to add product to cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Tap to add product to cart"}
 RESULT: {"using":"accessibility id","value":"Tap to add product to cart"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a2-ffff-ffff00000188/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05db-ffff-ffff00000188/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Displays number of items in your cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Displays number of items in your cart"}
 RESULT: {"using":"accessibility id","value":"Displays number of items in your cart"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a2-ffff-ffff0000016f/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05db-ffff-ffff0000016f/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Displays number of items in your cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Displays number of items in your cart"}
 RESULT: {"using":"accessibility id","value":"Displays number of items in your cart"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a2-ffff-ffff0000016f/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05db-ffff-ffff0000016f/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productTV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productTV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productTV"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productTV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productTV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productTV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a3-ffff-ffff000001e8/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05dc-ffff-ffff000001e8/displayed - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="android.rf8r90007tx.Sauce_Labs_Demo_App" name="should remove product from cart" time="10.402">
+    <testcase classname="android.rf8r90007tx.Sauce_Labs_Demo_App" name="should remove product from cart" time="10.623">
       <system-out><![CDATA[
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/appium/device/terminate_app - {"appId":"com.saucelabs.mydemoapp.android"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/appium/device/terminate_app - {"appId":"com.saucelabs.mydemoapp.android"}
 RESULT: {"appId":"com.saucelabs.mydemoapp.android"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/appium/device/activate_app - {"appId":"com.saucelabs.mydemoapp.android"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/appium/device/activate_app - {"appId":"com.saucelabs.mydemoapp.android"}
 RESULT: {"appId":"com.saucelabs.mydemoapp.android"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a6-ffff-ffff0000005c/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05df-ffff-ffff0000005c/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a6-ffff-ffff0000005c/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05df-ffff-ffff0000005c/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a6-ffff-ffff0000005c/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05df-ffff-ffff0000005c/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Tap to add product to cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Tap to add product to cart"}
 RESULT: {"using":"accessibility id","value":"Tap to add product to cart"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Tap to add product to cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Tap to add product to cart"}
 RESULT: {"using":"accessibility id","value":"Tap to add product to cart"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a7-ffff-ffff00000188/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e0-ffff-ffff00000188/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Tap to add product to cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Tap to add product to cart"}
 RESULT: {"using":"accessibility id","value":"Tap to add product to cart"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a7-ffff-ffff00000188/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e0-ffff-ffff00000188/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Tap to add product to cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Tap to add product to cart"}
 RESULT: {"using":"accessibility id","value":"Tap to add product to cart"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a7-ffff-ffff00000188/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e0-ffff-ffff00000188/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Displays number of items in your cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Displays number of items in your cart"}
 RESULT: {"using":"accessibility id","value":"Displays number of items in your cart"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a7-ffff-ffff0000016f/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e0-ffff-ffff0000016f/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Displays number of items in your cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Displays number of items in your cart"}
 RESULT: {"using":"accessibility id","value":"Displays number of items in your cart"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a7-ffff-ffff0000016f/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e0-ffff-ffff0000016f/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Removes product from cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Removes product from cart"}
 RESULT: {"using":"accessibility id","value":"Removes product from cart"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a8-ffff-ffff00000212/displayed - {}
-RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Removes product from cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Removes product from cart"}
 RESULT: {"using":"accessibility id","value":"Removes product from cart"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a8-ffff-ffff00000212/click - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e1-ffff-ffff00000212/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/noItemTitleTV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Removes product from cart"}
+RESULT: {"using":"accessibility id","value":"Removes product from cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e1-ffff-ffff00000212/click - {}
+RESULT: {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/noItemTitleTV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/noItemTitleTV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05a8-ffff-ffff000001e0/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e1-ffff-ffff000001e0/displayed - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="android.rf8r90007tx.Sauce_Labs_Demo_App" name="should add green product to cart and verify selected color" time="5.895">
+    <testcase classname="android.rf8r90007tx.Sauce_Labs_Demo_App" name="should add green product to cart and verify selected color" time="5.959">
       <system-out><![CDATA[
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/appium/device/terminate_app - {"appId":"com.saucelabs.mydemoapp.android"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/appium/device/terminate_app - {"appId":"com.saucelabs.mydemoapp.android"}
 RESULT: {"appId":"com.saucelabs.mydemoapp.android"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/appium/device/activate_app - {"appId":"com.saucelabs.mydemoapp.android"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/appium/device/activate_app - {"appId":"com.saucelabs.mydemoapp.android"}
 RESULT: {"appId":"com.saucelabs.mydemoapp.android"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05ab-ffff-ffff0000005c/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e4-ffff-ffff0000005c/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05ab-ffff-ffff0000005c/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e4-ffff-ffff0000005c/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05ab-ffff-ffff0000005c/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e4-ffff-ffff0000005c/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Green color"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Green color"}
 RESULT: {"using":"accessibility id","value":"Green color"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Green color"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Green color"}
 RESULT: {"using":"accessibility id","value":"Green color"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05ac-ffff-ffff000001ca/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e5-ffff-ffff000001ca/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Green color"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Green color"}
 RESULT: {"using":"accessibility id","value":"Green color"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05ac-ffff-ffff000001ca/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e5-ffff-ffff000001ca/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Tap to add product to cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Tap to add product to cart"}
 RESULT: {"using":"accessibility id","value":"Tap to add product to cart"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05ac-ffff-ffff00000188/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e5-ffff-ffff00000188/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Tap to add product to cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Tap to add product to cart"}
 RESULT: {"using":"accessibility id","value":"Tap to add product to cart"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05ac-ffff-ffff00000188/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e5-ffff-ffff00000188/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Tap to add product to cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Tap to add product to cart"}
 RESULT: {"using":"accessibility id","value":"Tap to add product to cart"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05ac-ffff-ffff00000188/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e5-ffff-ffff00000188/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Displays number of items in your cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Displays number of items in your cart"}
 RESULT: {"using":"accessibility id","value":"Displays number of items in your cart"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05ac-ffff-ffff0000016f/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e5-ffff-ffff0000016f/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Displays number of items in your cart"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Displays number of items in your cart"}
 RESULT: {"using":"accessibility id","value":"Displays number of items in your cart"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05ac-ffff-ffff0000016f/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e5-ffff-ffff0000016f/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Displays color of selected product"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Displays color of selected product"}
 RESULT: {"using":"accessibility id","value":"Displays color of selected product"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Displays color of selected product"}
-RESULT: {"using":"accessibility id","value":"Displays color of selected product"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05ad-ffff-ffff0000020c/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e6-ffff-ffff0000020c/displayed - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="android.rf8r90007tx.Sauce_Labs_Demo_App" name="should submit five star review and show confirmation dialog" time="4.48">
+    <testcase classname="android.rf8r90007tx.Sauce_Labs_Demo_App" name="should submit five star review and show confirmation dialog" time="3.838">
       <system-out><![CDATA[
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/appium/device/terminate_app - {"appId":"com.saucelabs.mydemoapp.android"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/appium/device/terminate_app - {"appId":"com.saucelabs.mydemoapp.android"}
 RESULT: {"appId":"com.saucelabs.mydemoapp.android"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/appium/device/activate_app - {"appId":"com.saucelabs.mydemoapp.android"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/appium/device/activate_app - {"appId":"com.saucelabs.mydemoapp.android"}
 RESULT: {"appId":"com.saucelabs.mydemoapp.android"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b0-ffff-ffff0000005c/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e9-ffff-ffff0000005c/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b0-ffff-ffff0000005c/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e9-ffff-ffff0000005c/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/elements - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b0-ffff-ffff0000005c/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05e9-ffff-ffff0000005c/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/start5IV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/start5IV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/start5IV"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/start5IV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/start5IV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/start5IV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b1-ffff-ffff00000182/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05ea-ffff-ffff00000182/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/start5IV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/start5IV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/start5IV"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b1-ffff-ffff00000182/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05ea-ffff-ffff00000182/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/sortTV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/sortTV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/sortTV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b2-ffff-ffff000001cf/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05eb-ffff-ffff000001cf/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/closeBt"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/closeBt"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/closeBt"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b2-ffff-ffff000001d0/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05eb-ffff-ffff000001d0/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/closeBt"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/closeBt"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/closeBt"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b2-ffff-ffff000001d0/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05eb-ffff-ffff000001d0/click - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="android.rf8r90007tx.Sauce_Labs_Demo_App" name="should login with valid credentials and logout successfully" time="10.676">
+    <testcase classname="android.rf8r90007tx.Sauce_Labs_Demo_App" name="should login with valid credentials and logout successfully" time="10.551">
       <system-out><![CDATA[
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/appium/device/terminate_app - {"appId":"com.saucelabs.mydemoapp.android"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/appium/device/terminate_app - {"appId":"com.saucelabs.mydemoapp.android"}
 RESULT: {"appId":"com.saucelabs.mydemoapp.android"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/appium/device/activate_app - {"appId":"com.saucelabs.mydemoapp.android"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/appium/device/activate_app - {"appId":"com.saucelabs.mydemoapp.android"}
 RESULT: {"appId":"com.saucelabs.mydemoapp.android"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b5-ffff-ffff0000005c/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05ee-ffff-ffff0000005c/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"View menu"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"View menu"}
 RESULT: {"using":"accessibility id","value":"View menu"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b5-ffff-ffff00000013/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05ee-ffff-ffff00000013/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"View menu"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"View menu"}
 RESULT: {"using":"accessibility id","value":"View menu"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b5-ffff-ffff00000013/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05ee-ffff-ffff00000013/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Login Menu Item"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Login Menu Item"}
 RESULT: {"using":"accessibility id","value":"Login Menu Item"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b5-ffff-ffff00000059/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05ee-ffff-ffff00000059/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Login Menu Item"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Login Menu Item"}
 RESULT: {"using":"accessibility id","value":"Login Menu Item"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b5-ffff-ffff00000059/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05ee-ffff-ffff00000059/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/nameET"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/nameET"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/nameET"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/nameET"}
-RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/nameET"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b6-ffff-ffff0000017c/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05ef-ffff-ffff0000017c/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/nameET"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/nameET"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/nameET"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b6-ffff-ffff0000017c/clear - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05ef-ffff-ffff0000017c/clear - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b6-ffff-ffff0000017c/value - {"text":"bod@example.com"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05ef-ffff-ffff0000017c/value - {"text":"bod@example.com"}
 RESULT: {"text":"bod@example.com"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/passwordET"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/passwordET"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/passwordET"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b6-ffff-ffff00000181/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05ef-ffff-ffff00000181/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/passwordET"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/passwordET"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/passwordET"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b6-ffff-ffff00000181/clear - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05ef-ffff-ffff00000181/clear - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b6-ffff-ffff00000181/value - {"text":"10203040"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05ef-ffff-ffff00000181/value - {"text":"10203040"}
 RESULT: {"text":"10203040"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Tap to login with given credentials"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Tap to login with given credentials"}
 RESULT: {"using":"accessibility id","value":"Tap to login with given credentials"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b6-ffff-ffff00000186/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05ef-ffff-ffff00000186/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Tap to login with given credentials"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Tap to login with given credentials"}
 RESULT: {"using":"accessibility id","value":"Tap to login with given credentials"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b6-ffff-ffff00000186/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05ef-ffff-ffff00000186/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/productIV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b8-ffff-ffff00000212/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05f1-ffff-ffff00000212/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"View menu"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"View menu"}
 RESULT: {"using":"accessibility id","value":"View menu"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b8-ffff-ffff000001c9/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05f1-ffff-ffff000001c9/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"View menu"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"View menu"}
 RESULT: {"using":"accessibility id","value":"View menu"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b8-ffff-ffff000001c9/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05f1-ffff-ffff000001c9/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Logout Menu Item"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Logout Menu Item"}
 RESULT: {"using":"accessibility id","value":"Logout Menu Item"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b8-ffff-ffff0000020f/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05f1-ffff-ffff0000020f/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"accessibility id","value":"Logout Menu Item"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"accessibility id","value":"Logout Menu Item"}
 RESULT: {"using":"accessibility id","value":"Logout Menu Item"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b8-ffff-ffff0000020f/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05f1-ffff-ffff0000020f/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/alertTitle"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/alertTitle"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/alertTitle"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/alertTitle"}
-RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/alertTitle"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b9-ffff-ffff00000322/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05f2-ffff-ffff00000322/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"android:id/button1"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"android:id/button1"}
 RESULT: {"using":"id","value":"android:id/button1"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b9-ffff-ffff00000331/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05f2-ffff-ffff00000331/displayed - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"android:id/button1"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"android:id/button1"}
 RESULT: {"using":"id","value":"android:id/button1"}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05b9-ffff-ffff00000331/click - {}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05f2-ffff-ffff00000331/click - {}
 RESULT: {}
-COMMAND: POST /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/loginTV"}
+COMMAND: POST /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element - {"using":"id","value":"com.saucelabs.mydemoapp.android:id/loginTV"}
 RESULT: {"using":"id","value":"com.saucelabs.mydemoapp.android:id/loginTV"}
-COMMAND: GET /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e/element/00000000-0000-05ba-ffff-ffff00000374/displayed - {}
+COMMAND: GET /session/e2160381-efb2-4e1a-8150-1756851b1a5f/element/00000000-0000-05f3-ffff-ffff00000374/displayed - {}
 RESULT: {}
-COMMAND: DELETE /session/c1a5e5e6-fafb-41df-800f-1beb6e306a6e - {}
+COMMAND: DELETE /session/e2160381-efb2-4e1a-8150-1756851b1a5f - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
